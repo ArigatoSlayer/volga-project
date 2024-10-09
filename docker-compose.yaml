@@ -1,0 +1,10 @@
+services:
+  postgres-account:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=hospital'
+      - 'POSTGRES_PASSWORD=password'
+      - 'POSTGRES_USER=admin'
+      - 'PGPORT=5433'
+    ports:
+      - '5433:5433'
